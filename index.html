@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia de Violência Doméstica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Denúncia de Violência Doméstica</h1>
+        <p>Se você ou alguém que você conhece está sendo vítima de violência doméstica, denuncie de forma anônima.</p>
+
+        <form action="submit_form.php" method="POST">
+            <label for="nome">Nome Completo (opcional):</label>
+            <input type="text" id="nome" name="nome">
+            : <label for="telefone">Telefone para Contato (opcional):</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="email">E-mail (opcional):</label>
+            <input type="email" id="email" name="email">
+
+            <label for="endereco">Endereço do Incidente (opcional):</label>
+            <input type="text" id="endereco" name="endereco">
+
+            <label for="data">Data do Incidente:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="detalhes">Descrição do Incidente:</label>
+            <textarea id="detalhes" name="detalhes" rows="5" required></textarea>
+
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+    </div>
+</body>
+</html>
